@@ -2,7 +2,7 @@ import requests
 import openai
 import os
 def generate_audio(text):
-    openai.api_key = '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'
+    openai.api_key = '你的APIkey'
 
     response = requests.post(
         "https://api.openai.com/v1/audio/speech",
