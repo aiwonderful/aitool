@@ -2,7 +2,7 @@ from openai import OpenAI
 import requests
 
 def generate_image(prompt):
-    client = OpenAI(api_key="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")
+    client = OpenAI(api_key="sp3")
 
     # 进行图片生成的 API 调用
     response = client.images.generate(
