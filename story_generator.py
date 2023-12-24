@@ -3,7 +3,7 @@ from pydantic import BaseModel
 import requests
 
 CHATGPT_API_URL = "https://api.openai.com/v1/chat/completions"
-API_KEY = "sk3"
+API_KEY = "你的apikey"
 
 class StoryRequest(BaseModel):
     theme: str
