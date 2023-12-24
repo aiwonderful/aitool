@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', path='/style.css') }}" rel="stylesheet">
+    <title>故事、音频和图片生成器</title>
+</head>
+<body>
+    <main class="main">
+        <header>
+            <h1 class="title">故事、音频和图片生成器</h1>
+        </header>
+        <div class="content">
+            <!-- 故事生成部分 -->
+            <section class="left">
+                <div class="tip">一键生成故事</div>
+                <textarea 
+                    class="input"
+                    id="storyPrompt"
+                    placeholder="输入你的故事主题"
+                ></textarea>
+                <div class="generate" id="generateStoryButton">生成故事</div>
+                <div class="output" id="storyResult"></div>
+                <div id="storyResult"></div>
+
+            </section>
+
+            <!-- 音频生成部分 -->
+            <section class="left">
+                <h2>生成音频</h2>
+                <div class="generate" id="generateAudioButton">生成音频</div>
+                <audio id="audioResult" controls></audio>
+            </section>
+
+            <!-- 图片生成部分 -->
+            <section class="left">
+                <h2>生成图片</h2>
+                <div class="generate" id="generateImageButton">生成图片</div>
+                <img id="imageResult" src="" alt="Generated Image">
+            </section>
+        </div>
+    </main>
+    <script src="{{ url_for('static', path='/index.js') }}"></script>
+</body>
+</html>
